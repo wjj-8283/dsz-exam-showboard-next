@@ -17,7 +17,7 @@
   </v-card>
 
   <v-card v-else class="mx-auto pa-4 subject-info-card" max-width="600" elevation="12">
-    <v-card-title class="headline grey lighten-2"> 考试已结束 </v-card-title>
+    <v-card-title class="text-h5 text--info"> 所有考试均已结束 </v-card-title>
   </v-card>
 </template>
 
@@ -52,7 +52,7 @@ const statusColor = computed(() => {
 });
 
 const statusText = computed(() => {
-  if (!props.exam) return '考试已结束';
+  if (!props.exam) return '所有考试均已结束';
 
   const start = new Date(props.exam.start);
   const end = new Date(props.exam.end);
