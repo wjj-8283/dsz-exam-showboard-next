@@ -45,7 +45,7 @@
 
 - 下载安装程序并运行
 - 编写 `json` 配置文件
-  - 您可以前往 [ `ExamShowBoardEditor`](https://github.com/ExamAware/DSZExamShowBoardEditor/releases) 获取配置文件编辑器
+  - 您可以前往 [ `ExamShowBoardEditor`](https://github.com/ExamAware/DSZExamShowBoardEditor/releases) 或 [`Jursin/exam-config-editor`](https://github.com/Jursin/exam-config-editor) 获取配置文件编辑器
   - 您可以按照[手动编写 `json` 配置文件](https://github.com/ExamAware/dsz-exam-showboard/tree/master/doc/Manually-write-JSON-configuration-file.md)教程编写配置文件
 - 打开软件，进入起始页面，点击 `打开配置` 按钮，选择配置文件
 - 或使用集控（仿照 [`ClassIsland` 集控使用方法](https://docs.classisland.tech/management/tutorial-create-management-config.html)）
