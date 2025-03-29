@@ -1,6 +1,6 @@
 <div align="center">
 
-# <image src="resources/icon.png" height="36"/> ExamShowboard
+# <image src="resources/icon.png" height="36"/> ExamShowboard-Legacy
 
 [![stars](https://img.shields.io/github/stars/ExamAware/dsz-exam-showboard?label=Stars)](https://github.com/ExamAware/dsz-exam-showboard/stargazers)
 [![forks](https://img.shields.io/github/forks/ExamAware/dsz-exam-showboard?label=Forks)](https://github.com/ExamAware/dsz-exam-showboard/forks)
@@ -29,9 +29,11 @@
 
 </div>
 
-> [!tip]
+>[!tip]
 >
-> **本软件使用 `Vue` + `TypeScript` + `JavaScript` 制作，使用 `Node.js` + `Electron` 完善系统级功能并打包。**
+> ExamShowboard-Legacy(考试看板-Legacy)已过时   
+>新版考试看板 知试ExamAware 2 请前往 `ExamAware2-Desktop` 仓库[获取](https://github.com/ExamAware/ExamAware2-Desktop)
+
 
 ## 功能
 

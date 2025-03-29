@@ -11,16 +11,12 @@
             <p class="text-lg">本软件旨在为考生提供便捷的考试信息查看体验。</p>
             <p class="text-lg developer">
               开发者：
-              <a href="https://github.com/hello8693DSZ" target="_blank" class="developer-name"
-                >Hello8963</a
-              >
-              <span> </span>
-              <a href="https://github.com/MKStoler4096" target="_blank" class="developer-name"
-                >Mkstoler4096</a
+              <a href="https://github.com/examaware" target="_blank" class="developer-name"
+                >ExamAware开发团队</a
               >
             </p>
             <v-btn
-              href="https://github.com/ProjectCampus-CH/dsz-exam-showboard-next"
+              href="https://github.com/ExamAware/ExamShowboard-Legacy"
               target="_blank"
               color="primary"
               class="mt-4 normal-case"
