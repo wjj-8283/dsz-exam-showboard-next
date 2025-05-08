@@ -16,6 +16,11 @@
         <v-card class="pa-4 fade-in slide-in" outlined>
           <v-btn block color="teal accent-4" dark @click="fetchConfig">请求配置</v-btn>
           <p class="mt-2 text-center">请求并加载配置</p>
+          <v-switch
+            v-model="autoEnterFetch"
+            label="下次自动请求并加载配置"
+            class="mt-2 auto-enter-switch"
+          ></v-switch>
           <v-btn block color="teal accent-4" dark class="mt-2" @click="gotoInfoPage"
             >直接进入看板</v-btn
           >
@@ -50,6 +55,7 @@ const router = useRouter();
 const route = useRoute();
 const remoteUrl = ref(localStorage.getItem('remoteUrl') || '');
 const autoEnter = ref(JSON.parse(localStorage.getItem('autoEnter') || 'false'));
+const autoEnterFetch = ref(JSON.parse(localStorage.getItem('autoEnterFetch') || 'false'));
 const errorDialog = ref(false);
 const errorMessage = ref('');
 
@@ -101,13 +107,23 @@ onMounted(() => {
 
   // 检查路由参数是否跳过自动跳转
   const skipAutoEnter = route.query.skipAutoEnter === 'true';
-  if (!skipAutoEnter && autoEnter.value) {
-    router.push('/infoPage');
+  const skipAutoEnterFetch = route.query.skipAutoEnterFetch === 'true';
+  if (!skipAutoEnterFetch && autoEnterFetch.value) {
+    fetchConfig();
+  }
+  else {
+    if (!skipAutoEnter && autoEnter.value) {
+      router.push('/infoPage');
+    }
   }
 });
 
 watch(autoEnter, (newVal) => {
   localStorage.setItem('autoEnter', JSON.stringify(newVal));
+});
+
+watch(autoEnterFetch, (newVal) => {
+  localStorage.setItem('autoEnterFetch', JSON.stringify(newVal));
 });
 </script>
 
